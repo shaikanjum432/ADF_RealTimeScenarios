@@ -1,0 +1,33 @@
+{
+    "name": "Dataset_MonthRevenue_TillDate",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlDatabase1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "cost",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "monthOfYear",
+                "type": "varchar"
+            },
+            {
+                "name": "RevenueTillDate",
+                "type": "decimal",
+                "precision": 10,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "MonthRevenue_TillDate"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
