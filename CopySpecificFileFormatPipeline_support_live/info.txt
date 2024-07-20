@@ -1,0 +1,6 @@
+selected resource name:		CopySpecificFileFormatPipeline
+selected resource type:		pipeline
+factory name:			ADFonejuly
+factory location:		eastus
+subscription id:		1ce77a32-1624-4130-8e3e-9387d8859b30
+time of download (UTC):		Sat, 20 Jul 2024 15:39:44 GMT
