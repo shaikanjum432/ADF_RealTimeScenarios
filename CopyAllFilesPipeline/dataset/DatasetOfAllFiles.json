@@ -1,0 +1,36 @@
+{
+    "name": "DatasetOfAllFiles",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "Input",
+                "fileSystem": "containerone"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "Name",
+                "type": "String"
+            },
+            {
+                "name": "Runs",
+                "type": "String"
+            },
+            {
+                "name": "Matches",
+                "type": "String"
+            }
+        ]
+    }
+}
