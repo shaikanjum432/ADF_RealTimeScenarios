@@ -1,0 +1,21 @@
+{
+    "name": "SqlServer1",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "SqlServer",
+        "typeProperties": {
+            "server": "LAPTOP-3FGB03GR\\SQLEXPRESS",
+            "database": "employee_database",
+            "encrypt": "mandatory",
+            "trustServerCertificate": true,
+            "authenticationType": "SQL",
+            "userName": "sa",
+            "encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyMzdhODU2Yi05Njg1LTQ1NDAtOGM5NS03MWUwYWNiMThjZDAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+        },
+        "connectVia": {
+            "referenceName": "SelfHostedintegrationRuntime1",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
