@@ -1,0 +1,45 @@
+{
+    "name": "DatasetOfDeletePipeline2",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "FileName": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().FileName",
+                    "type": "Expression"
+                },
+                "folderPath": "Output",
+                "fileSystem": "containerone"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "cost",
+                "type": "String"
+            },
+            {
+                "name": "monthOfYear",
+                "type": "String"
+            },
+            {
+                "name": "RevenueTillDate",
+                "type": "String"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "BinaryOfDeleteFile",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "DeleteFile": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "Binary",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().DeleteFile",
+                    "type": "Expression"
+                },
+                "folderPath": "Output",
+                "fileSystem": "containerone"
+            }
+        }
+    }
+}
